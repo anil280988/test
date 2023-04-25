@@ -1,0 +1,105 @@
+uuid: 5018cc3c-08c6-404f-a566-b6fc25fec21c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.contact.field_contact_email
+    - field.field.node.contact.field_contact_title
+    - field.field.node.contact.field_contact_type
+    - field.field.node.contact.field_domain_access
+    - field.field.node.contact.field_domain_all_affiliates
+    - field.field.node.contact.field_domain_source
+    - field.field.node.contact.field_mobile
+    - field.field.node.contact.field_profile_image
+    - field.field.node.contact.field_profile_image_url
+    - field.field.node.contact.field_region
+    - field.field.node.contact.field_region_order
+    - node.type.contact
+  module:
+    - image_base64_formatter
+    - options
+    - user
+id: node.contact.default
+targetEntityType: node
+bundle: contact
+mode: default
+content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+  field_contact_email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_contact_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_contact_type:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_mobile:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_profile_image:
+    type: image_base64
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+      image_display: ''
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_profile_image_url:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_region:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_region_order:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true

@@ -1,0 +1,18 @@
+uuid: 166593ed-829f-40e2-9959-9d78f7a0c902
+langcode: en
+status: true
+dependencies:
+  module:
+    - contentservice
+    - jwt
+    - serialization
+id: concierto_cs_update_tutorial
+plugin_id: concierto_cs_update_tutorial
+granularity: resource
+configuration:
+  methods:
+    - PUT
+  formats:
+    - json
+  authentication:
+    - jwt_auth

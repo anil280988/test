@@ -1,0 +1,14 @@
+uuid: 14271338-2ba0-4eaa-8c39-90a9ac04a7ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - domain.record.eureka_forbes_softwareone_dev_userapi_concierto_in
+  module:
+    - domain_access
+id: domain_access_add_action.eureka_forbes_softwareone_dev_userapi_concierto_in
+label: 'Add selected content to the Eureka Forbes domain'
+type: node
+plugin: domain_access_add_action
+configuration:
+  domain_id: eureka_forbes_softwareone_dev_userapi_concierto_in

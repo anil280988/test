@@ -1,0 +1,193 @@
+uuid: 2a550318-834d-4a6c-93a5-a321213145c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.news
+id: node--news
+disabled: false
+path: node/news
+resourceType: node--news
+resourceFields:
+  nid:
+    disabled: false
+    fieldName: nid
+    publicName: nid
+    enhancer:
+      id: ''
+  uuid:
+    disabled: false
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+  vid:
+    disabled: false
+    fieldName: vid
+    publicName: vid
+    enhancer:
+      id: ''
+  langcode:
+    disabled: true
+    fieldName: langcode
+    publicName: langcode
+    enhancer:
+      id: ''
+  type:
+    disabled: false
+    fieldName: type
+    publicName: type
+    enhancer:
+      id: ''
+  revision_timestamp:
+    disabled: true
+    fieldName: revision_timestamp
+    publicName: revision_timestamp
+    enhancer:
+      id: ''
+  revision_uid:
+    disabled: false
+    fieldName: revision_uid
+    publicName: revision_uid
+    enhancer:
+      id: ''
+  revision_log:
+    disabled: true
+    fieldName: revision_log
+    publicName: revision_log
+    enhancer:
+      id: ''
+  status:
+    disabled: false
+    fieldName: status
+    publicName: status
+    enhancer:
+      id: ''
+  uid:
+    disabled: false
+    fieldName: uid
+    publicName: uid
+    enhancer:
+      id: ''
+  title:
+    disabled: false
+    fieldName: title
+    publicName: title
+    enhancer:
+      id: ''
+  created:
+    disabled: false
+    fieldName: created
+    publicName: created
+    enhancer:
+      id: ''
+  changed:
+    disabled: false
+    fieldName: changed
+    publicName: changed
+    enhancer:
+      id: ''
+  promote:
+    disabled: true
+    fieldName: promote
+    publicName: promote
+    enhancer:
+      id: ''
+  sticky:
+    disabled: true
+    fieldName: sticky
+    publicName: sticky
+    enhancer:
+      id: ''
+  default_langcode:
+    disabled: true
+    fieldName: default_langcode
+    publicName: default_langcode
+    enhancer:
+      id: ''
+  revision_default:
+    disabled: true
+    fieldName: revision_default
+    publicName: revision_default
+    enhancer:
+      id: ''
+  revision_translation_affected:
+    disabled: true
+    fieldName: revision_translation_affected
+    publicName: revision_translation_affected
+    enhancer:
+      id: ''
+  moderation_state:
+    disabled: false
+    fieldName: moderation_state
+    publicName: moderation_state
+    enhancer:
+      id: ''
+  path:
+    disabled: true
+    fieldName: path
+    publicName: path
+    enhancer:
+      id: ''
+  menu_link:
+    disabled: true
+    fieldName: menu_link
+    publicName: menu_link
+    enhancer:
+      id: ''
+  field_domain_access:
+    disabled: true
+    fieldName: field_domain_access
+    publicName: field_domain_access
+    enhancer:
+      id: ''
+  field_domain_all_affiliates:
+    disabled: true
+    fieldName: field_domain_all_affiliates
+    publicName: field_domain_all_affiliates
+    enhancer:
+      id: ''
+  field_domain_source:
+    disabled: true
+    fieldName: field_domain_source
+    publicName: field_domain_source
+    enhancer:
+      id: ''
+  field_news_banner:
+    disabled: false
+    fieldName: field_news_banner
+    publicName: field_news_banner
+    enhancer:
+      id: image_styles
+      settings:
+        styles:
+          refine: true
+          custom_selection:
+            - medium
+            - large
+            - thumbnail
+            - wide
+  field_news_categories:
+    disabled: false
+    fieldName: field_news_categories
+    publicName: field_news_categories
+    enhancer:
+      id: ''
+  field_news_description:
+    disabled: false
+    fieldName: field_news_description
+    publicName: field_news_description
+    enhancer:
+      id: ''
+  field_news_tags:
+    disabled: false
+    fieldName: field_news_tags
+    publicName: field_news_tags
+    enhancer:
+      id: ''
+  field_trending_news:
+    disabled: false
+    fieldName: field_trending_news
+    publicName: field_trending_news
+    enhancer:
+      id: ''

@@ -1,0 +1,20 @@
+uuid: 4721d6c0-9be0-4e61-a2a8-3e0f40aadc54
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_sourceuserid
+  module:
+    - user
+id: user.user.field_sourceuserid
+field_name: field_sourceuserid
+entity_type: user
+bundle: user
+label: sourceuserid
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

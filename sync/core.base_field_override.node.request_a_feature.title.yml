@@ -1,0 +1,18 @@
+uuid: dae2d4f9-ccc2-4120-bbca-922b7a909436
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.request_a_feature
+id: node.request_a_feature.title
+field_name: title
+entity_type: node
+bundle: request_a_feature
+label: 'Feature Names'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,13 @@
+name: 'Session Inspector Events Test'
+description: 'Functionality to assist session inspector event testing.'
+type: module
+hidden: true
+core_version_requirement: ^8.8 || ^9
+dependencies:
+  - session_inspector:session_inspector
+package: Testing
+
+# Information added by Drupal.org packaging script on 2023-04-06
+version: '1.0.3'
+project: 'session_inspector'
+datestamp: 1680772515

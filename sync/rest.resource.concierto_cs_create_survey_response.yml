@@ -1,0 +1,18 @@
+uuid: 82c05ddf-7a72-4739-824c-01ae2e43e5f0
+langcode: en
+status: true
+dependencies:
+  module:
+    - jwt
+    - serialization
+    - survey
+id: concierto_cs_create_survey_response
+plugin_id: concierto_cs_create_survey_response
+granularity: resource
+configuration:
+  methods:
+    - POST
+  formats:
+    - json
+  authentication:
+    - jwt_auth

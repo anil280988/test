@@ -1,0 +1,8 @@
+proposal: khajamohidun.a@trianz.com
+demo: ''
+poc: ''
+prod_env: ''
+uat_env: 'https://uat.concierto.cloud/api'
+dev_env: 'https://uat.concierto.cloud/api'
+submit_query: ''
+domain_msp_config: 'CD_63035dbc83e0d10f7d9b9945,sone_qa###CD_62a9e007978b2d28f144f847,whirlpool_apidevuser_concierto_cloud###CD_6321a9e9df119e720e83ee13,infosys_softwareone_dev_userapi_concierto_in###CD_632073b679e693c427616b8e,infosys_softwareone_dev_userapi_concierto_in###CD_632d9e317465539fe974c0fd,c1_softwareone_dev_userapi_concierto_in###CD_620491452220e477369a7699,trianzit_uat_userapi_concierto_cloud###test,test'

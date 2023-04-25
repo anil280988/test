@@ -1,0 +1,5 @@
+session_inspector.config:
+  title: 'Session Inspector'
+  route_name: session_inspector.config
+  description: 'Configure Session Inspector.'
+  parent: user.admin_index

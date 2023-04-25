@@ -1,0 +1,43 @@
+uuid: 832f6488-ad46-4257-850e-773dcf57cfb5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.client_intro.field_client_site
+    - field.field.node.client_intro.field_domain_access
+    - field.field.node.client_intro.field_domain_all_affiliates
+    - field.field.node.client_intro.field_domain_source
+    - field.field.node.client_intro.field_video_link
+    - node.type.client_intro
+  module:
+    - user
+id: node.client_intro.default
+targetEntityType: node
+bundle: client_intro
+mode: default
+content:
+  field_client_site:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_video_link:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true

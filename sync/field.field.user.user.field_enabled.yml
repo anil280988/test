@@ -1,0 +1,24 @@
+uuid: 014ec2ce-8a78-467b-b8e6-3a59c13b990b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_enabled
+  module:
+    - user
+id: user.user.field_enabled
+field_name: field_enabled
+entity_type: user
+bundle: user
+label: enabled
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,27 @@
+uuid: 1d11480b-1bb7-4178-aba1-01e04a24d03e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_trending_tutorials
+field_name: field_trending_tutorials
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: 'Yes'
+    -
+      value: '0'
+      label: 'No'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

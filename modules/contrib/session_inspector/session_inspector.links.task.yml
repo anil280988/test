@@ -1,0 +1,5 @@
+session_inspector.manage:
+  title: 'Sessions'
+  route_name: session_inspector.manage
+  base_route: entity.user.canonical
+  weight: 20

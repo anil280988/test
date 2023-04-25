@@ -1,0 +1,18 @@
+uuid: 18c2604d-a765-49f3-b8d3-fa38ac22f9a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.client_logo
+id: node.client_logo.title
+field_name: title
+entity_type: node
+bundle: client_logo
+label: 'Client name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

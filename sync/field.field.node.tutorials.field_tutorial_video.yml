@@ -1,0 +1,27 @@
+uuid: 50ddd28d-2d88-42b1-97c6-2a8669fdc410
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tutorial_video
+    - node.type.tutorials
+  module:
+    - file
+id: node.tutorials.field_tutorial_video
+field_name: field_tutorial_video
+entity_type: node
+bundle: tutorials
+label: 'Tutorial Video'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: txt
+  max_filesize: ''
+  description_field: false
+field_type: file

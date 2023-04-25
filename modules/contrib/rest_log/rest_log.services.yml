@@ -1,0 +1,7 @@
+services:
+  rest_log.default:
+    class: Drupal\rest_log\EventSubscriber\RestLogSubscriber
+    arguments: []
+    tags:
+      - { name: event_subscriber }
+

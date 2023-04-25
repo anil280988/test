@@ -1,0 +1,20 @@
+uuid: e427cb01-3fe4-4fe7-b620-ad004d7eca47
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_clientid
+  module:
+    - user
+id: user.user.field_clientid
+field_name: field_clientid
+entity_type: user
+bundle: user
+label: clientid
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

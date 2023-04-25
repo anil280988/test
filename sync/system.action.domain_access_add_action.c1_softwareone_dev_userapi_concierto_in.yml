@@ -1,0 +1,14 @@
+uuid: 51d2eab5-949c-4c8b-be5c-f06e3b1986a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - domain.record.c1_softwareone_dev_userapi_concierto_in
+  module:
+    - domain_access
+id: domain_access_add_action.c1_softwareone_dev_userapi_concierto_in
+label: 'Add selected content to the client 4 domain'
+type: node
+plugin: domain_access_add_action
+configuration:
+  domain_id: c1_softwareone_dev_userapi_concierto_in

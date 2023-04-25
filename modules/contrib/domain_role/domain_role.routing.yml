@@ -1,0 +1,11 @@
+
+domain_role.domain_role_config_form:
+  path: '/admin/people/domain_role'
+  defaults:
+    _form: '\Drupal\domain_role\Form\DomainRoleConfigForm'
+    _title: 'Domain Roles'
+  requirements:
+    _permission: 'administer domains'
+  options:
+    _admin_route: TRUE
+

@@ -1,0 +1,18 @@
+uuid: 1c70642c-06db-417d-819d-b3e0f45c419b
+langcode: en
+status: true
+dependencies:
+  module:
+    - contentservice
+    - jwt
+    - serialization
+id: concierto_cs_show_news
+plugin_id: concierto_cs_show_news
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - jwt_auth

@@ -1,0 +1,42 @@
+uuid: 2b5fdbe5-e057-4db2-93fd-110e6f9a4e03
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_tutorial_category
+field_name: field_tutorial_category
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'CONCIERTO FUNDAMENTALS'
+      label: 'CONCIERTO FUNDAMENTALS'
+    -
+      value: 'OPS ENINEERING'
+      label: 'OPS ENINEERING'
+    -
+      value: 'DEPLOYMENT SPECIALIST'
+      label: 'DEPLOYMENT SPECIALIST'
+    -
+      value: 'PLATFORM ADMINISTRATION'
+      label: 'PLATFORM ADMINISTRATION'
+    -
+      value: 'AUTOMATION SPECIALIST'
+      label: 'AUTOMATION SPECIALIST'
+    -
+      value: IMPLEMENTER
+      label: IMPLEMENTER
+    -
+      value: ARCHITECT
+      label: ARCHITECT
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

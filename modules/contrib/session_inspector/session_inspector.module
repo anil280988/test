@@ -1,0 +1,30 @@
+<?php
+
+/**
+ * @file
+ * The session inspector module file.
+ */
+
+/**
+ * Implements hook_user_login().
+ */
+function session_inspector_user_login($account) {
+  /** @var \Symfony\Component\HttpFoundation\Request $request */
+  $request = \Drupal::request();
+  $session = $request->getSession();
+  $session->set('session_inspector_browser', $request->server->get('HTTP_USER_AGENT'));
+}
+
+/**
+ * Implements hook_theme().
+ */
+function session_inspector_theme() {
+  return [
+    'sessions' => [
+      'variables' => [
+        'description' => '',
+        'sessions' => [],
+      ],
+    ],
+  ];
+}

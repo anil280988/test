@@ -1,0 +1,18 @@
+uuid: b670d03c-e61c-4fb7-b240-cd604b7822fe
+langcode: en
+status: true
+dependencies:
+  module:
+    - jwt
+    - mspclientdomain
+    - serialization
+id: concierto_cs_permission
+plugin_id: concierto_cs_permission
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - jwt_auth

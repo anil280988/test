@@ -1,0 +1,39 @@
+uuid: 8c528fbe-a25c-4b77-be01-03ef2d5233a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.broadcast.field_domain_access
+    - field.field.node.broadcast.field_domain_all_affiliates
+    - field.field.node.broadcast.field_domain_source
+    - field.field.node.broadcast.field_user_group
+    - node.type.broadcast
+  module:
+    - options
+    - user
+id: node.broadcast.default
+targetEntityType: node
+bundle: broadcast
+mode: default
+content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+  field_user_group:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true

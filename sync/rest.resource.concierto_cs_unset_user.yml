@@ -1,0 +1,22 @@
+uuid: a9a2b7eb-e932-4d90-800a-2e316e738dde
+langcode: en
+status: false
+dependencies:
+  module:
+    - contentservice
+    - jwt
+    - jwt_path_auth
+    - serialization
+    - users_jwt
+id: concierto_cs_unset_user
+plugin_id: concierto_cs_unset_user
+granularity: resource
+configuration:
+  methods:
+    - PUT
+  formats:
+    - json
+  authentication:
+    - jwt_auth
+    - users_jwt_auth
+    - jwt_path_auth

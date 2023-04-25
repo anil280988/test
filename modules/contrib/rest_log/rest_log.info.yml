@@ -1,0 +1,13 @@
+name: 'Rest log'
+type: module
+description: 'all rest log'
+core: 8.x
+dependencies:
+  - rest
+  - restui
+  - views
+
+# Information added by Drupal.org packaging script on 2020-04-21
+version: '8.x-1.0'
+project: 'rest_log'
+datestamp: 1587440734

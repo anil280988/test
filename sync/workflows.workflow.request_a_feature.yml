@@ -1,0 +1,42 @@
+uuid: b13e3a52-b6bf-4c76-9d73-fe18937d9839
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.request_a_feature
+  module:
+    - content_moderation
+id: request_a_feature
+label: 'Request a Feature'
+type: content_moderation
+type_settings:
+  states:
+    draft:
+      label: Draft
+      weight: 0
+      published: false
+      default_revision: false
+    published:
+      label: Published
+      weight: 1
+      published: true
+      default_revision: true
+  transitions:
+    create_new_draft:
+      label: 'Create New Draft'
+      from:
+        - draft
+        - published
+      to: draft
+      weight: 0
+    publish:
+      label: Publish
+      from:
+        - draft
+        - published
+      to: published
+      weight: 1
+  entity_types:
+    node:
+      - request_a_feature
+  default_moderation_state: published

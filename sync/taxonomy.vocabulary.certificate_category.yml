@@ -1,0 +1,8 @@
+uuid: ec80c2dc-48c0-4b4a-bde2-e3a858da4cb8
+langcode: en
+status: true
+dependencies: {  }
+name: 'certificate category'
+vid: certificate_category
+description: ''
+weight: 0

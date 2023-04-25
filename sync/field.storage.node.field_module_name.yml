@@ -1,0 +1,39 @@
+uuid: 5735b2aa-44dc-4a08-8aea-b5e66d1e533b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_module_name
+field_name: field_module_name
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Broadcast
+      label: Broadcast
+    -
+      value: Contact
+      label: Contact
+    -
+      value: 'Event Calendar'
+      label: 'Event Calendar'
+    -
+      value: News
+      label: News
+    -
+      value: Tutorial
+      label: Tutorial
+    -
+      value: 'Product Updates'
+      label: 'Product Updates'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

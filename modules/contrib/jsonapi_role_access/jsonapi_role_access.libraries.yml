@@ -1,0 +1,7 @@
+jsonapi_role_access.authenticated:
+  version: VERSION
+  js:
+    js/authencated_users_toggle.js: {}
+  dependencies:
+    - core/jquery.once
+    - core/drupal

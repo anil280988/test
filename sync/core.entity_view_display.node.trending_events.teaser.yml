@@ -1,0 +1,40 @@
+uuid: 080ce3a4-ce2c-4c19-ba08-26c5d49afd4c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.trending_events.body
+    - field.field.node.trending_events.field_domain_access
+    - field.field.node.trending_events.field_domain_all_affiliates
+    - field.field.node.trending_events.field_domain_source
+    - field.field.node.trending_events.field_event_details
+    - field.field.node.trending_events.field_trending_event
+    - node.type.trending_events
+  module:
+    - text
+    - user
+id: node.trending_events.teaser
+targetEntityType: node
+bundle: trending_events
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_event_details: true
+  field_trending_event: true

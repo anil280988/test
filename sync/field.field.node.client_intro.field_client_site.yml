@@ -1,0 +1,19 @@
+uuid: 6b71ccd9-17c0-42d6-bb50-23a45b63d949
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_client_site
+    - node.type.client_intro
+id: node.client_intro.field_client_site
+field_name: field_client_site
+entity_type: node
+bundle: client_intro
+label: 'client site'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

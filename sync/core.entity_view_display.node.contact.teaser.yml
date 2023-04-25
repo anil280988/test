@@ -1,0 +1,47 @@
+uuid: 1c1769b8-1d07-4cdc-bf32-23ea3e655db1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.contact.field_contact_email
+    - field.field.node.contact.field_contact_title
+    - field.field.node.contact.field_contact_type
+    - field.field.node.contact.field_domain_access
+    - field.field.node.contact.field_domain_all_affiliates
+    - field.field.node.contact.field_domain_source
+    - field.field.node.contact.field_mobile
+    - field.field.node.contact.field_profile_image
+    - field.field.node.contact.field_profile_image_url
+    - field.field.node.contact.field_region
+    - field.field.node.contact.field_region_order
+    - node.type.contact
+  module:
+    - user
+id: node.contact.teaser
+targetEntityType: node
+bundle: contact
+mode: teaser
+content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_contact_email: true
+  field_contact_title: true
+  field_contact_type: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_mobile: true
+  field_profile_image: true
+  field_profile_image_url: true
+  field_region: true
+  field_region_order: true

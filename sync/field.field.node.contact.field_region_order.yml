@@ -1,0 +1,25 @@
+uuid: e6088ae3-af47-4bdd-9e42-c800a370e44a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_region_order
+    - node.type.contact
+id: node.contact.field_region_order
+field_name: field_region_order
+entity_type: node
+bundle: contact
+label: 'Region Order'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

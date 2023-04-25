@@ -1,0 +1,14 @@
+uuid: 41fb55ef-71d8-4b4b-8493-b1bf69c81280
+langcode: en
+status: true
+dependencies:
+  config:
+    - domain.record.infosys_softwareone_dev_userapi_concierto_in
+  module:
+    - domain_access
+id: domain_access_remove_action.infosys_softwareone_dev_userapi_concierto_in
+label: 'Remove selected content from the Infosys domain'
+type: node
+plugin: domain_access_remove_action
+configuration:
+  domain_id: infosys_softwareone_dev_userapi_concierto_in

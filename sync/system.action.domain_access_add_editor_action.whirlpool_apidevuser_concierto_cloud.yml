@@ -1,0 +1,14 @@
+uuid: ff353e95-db34-4de8-b75a-1547a9d47419
+langcode: en
+status: true
+dependencies:
+  config:
+    - domain.record.whirlpool_apidevuser_concierto_cloud
+  module:
+    - domain_access
+id: domain_access_add_editor_action.whirlpool_apidevuser_concierto_cloud
+label: 'Add editors to the Whirlpool domain'
+type: user
+plugin: domain_access_add_editor_action
+configuration:
+  domain_id: whirlpool_apidevuser_concierto_cloud

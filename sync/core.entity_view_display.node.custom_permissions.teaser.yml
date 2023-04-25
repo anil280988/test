@@ -1,0 +1,32 @@
+uuid: bd3dc726-af19-4083-aed9-eeae8c543c38
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.custom_permissions.field_create
+    - field.field.node.custom_permissions.field_delete
+    - field.field.node.custom_permissions.field_module_name
+    - field.field.node.custom_permissions.field_permission_set
+    - field.field.node.custom_permissions.field_update
+    - field.field.node.custom_permissions.field_view
+    - node.type.custom_permissions
+  module:
+    - user
+id: node.custom_permissions.teaser
+targetEntityType: node
+bundle: custom_permissions
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_create: true
+  field_delete: true
+  field_module_name: true
+  field_permission_set: true
+  field_update: true
+  field_view: true

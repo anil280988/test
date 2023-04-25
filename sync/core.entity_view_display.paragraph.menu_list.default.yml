@@ -1,0 +1,42 @@
+uuid: 6d4eff5c-8b56-4fd0-91f0-f25a3fd96a41
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.menu_list.field_menu_link
+    - field.field.paragraph.menu_list.field_menu_title
+    - field.field.paragraph.menu_list.field_submenu
+    - paragraphs.paragraphs_type.menu_list
+  module:
+    - entity_reference_revisions
+id: paragraph.menu_list.default
+targetEntityType: paragraph
+bundle: menu_list
+mode: default
+content:
+  field_menu_link:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_menu_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_submenu:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden: {  }

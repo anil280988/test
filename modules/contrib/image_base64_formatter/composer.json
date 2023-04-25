@@ -1,0 +1,17 @@
+{
+    "name": "drupal/image_base64_formatter",
+    "description": "Adds a simple formatter for image fields that prints the base64 of the image.",
+    "type": "drupal-module",
+    "keywords": ["Drupal", "image_base64_formatter"],
+    "homepage": "https://www.drupal.org/project/image_base64_formatter",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/image_base64_formatter",
+        "documentation": "https://www.drupal.org/project/image_base64_formatter",
+        "source": "http://cgit.drupalcode.org/image_base64_formatter"
+    },
+    "license": "GPL-2.0+",
+    "minimum-stability": "dev",
+    "require": {
+        "drupal/core": "^8 || ^9"
+    }
+}

@@ -1,0 +1,19 @@
+uuid: 286038f5-47c6-48e4-8567-b17fa11bfe7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_survey_problem
+    - node.type.suvey
+id: node.suvey.field_survey_problem
+field_name: field_survey_problem
+entity_type: node
+bundle: suvey
+label: 'Survey Problem'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,25 @@
+uuid: 0cf52c24-1621-4557-8738-d9a9d1a36938
+langcode: en
+status: true
+dependencies:
+  module:
+    - basic_auth
+    - jwt
+    - key_auth
+    - serialization
+    - user
+id: entity.user
+plugin_id: 'entity:user'
+granularity: resource
+configuration:
+  methods:
+    - GET
+    - POST
+    - DELETE
+    - PATCH
+  formats:
+    - json
+  authentication:
+    - key_auth
+    - jwt_auth
+    - basic_auth

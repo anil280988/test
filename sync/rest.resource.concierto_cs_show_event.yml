@@ -1,0 +1,18 @@
+uuid: b55865c5-028d-4d65-aa42-94aa71ed4680
+langcode: en
+status: true
+dependencies:
+  module:
+    - contentservice
+    - jwt
+    - serialization
+id: concierto_cs_show_event
+plugin_id: concierto_cs_show_event
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - jwt_auth

@@ -1,0 +1,19 @@
+uuid: 02aac4c3-abfc-48cf-87b0-6f5b623cfb2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_details
+    - node.type.trending_events
+id: node.trending_events.field_event_details
+field_name: field_event_details
+entity_type: node
+bundle: trending_events
+label: 'Event Details'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

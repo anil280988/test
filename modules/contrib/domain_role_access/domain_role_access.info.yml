@@ -1,0 +1,14 @@
+name: Domain Role Access
+type: module
+description: Per-role domain access.
+core: 8.x
+core_version_requirement: ^8 || ^9
+dependencies:
+  - domain:domain
+  - domain:domain_config
+  - domain:domain_access
+
+# Information added by Drupal.org packaging script on 2020-10-16
+version: '8.x-1.0-alpha2'
+project: 'domain_role_access'
+datestamp: 1602871565

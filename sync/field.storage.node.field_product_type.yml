@@ -1,0 +1,30 @@
+uuid: 8bf3b274-fa07-4721-9c15-04e272d253a6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_product_type
+field_name: field_product_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: 'Product Changelog'
+    -
+      value: '2'
+      label: 'New Procedures'
+    -
+      value: '3'
+      label: Roadmap
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

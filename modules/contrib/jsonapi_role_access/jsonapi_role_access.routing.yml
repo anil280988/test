@@ -1,0 +1,7 @@
+jsonapi_role_access.config:
+  path: '/admin/config/services/jsonapi/role_access'
+  defaults:
+    _form: '\Drupal\jsonapi_role_access\Form\JsonapiRoleAccessSettingsForm'
+    _title: 'JSON:API Role Access Settings'
+  requirements:
+    _permission: 'jsonapi role access'

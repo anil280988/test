@@ -1,0 +1,18 @@
+uuid: e46b5f88-52fc-4a1b-989e-71e6ef1e9166
+langcode: en
+status: true
+dependencies:
+  module:
+    - contentservice
+    - jwt
+    - serialization
+id: concierto_cs_delete_user
+plugin_id: concierto_cs_delete_user
+granularity: resource
+configuration:
+  methods:
+    - PUT
+  formats:
+    - json
+  authentication:
+    - jwt_auth

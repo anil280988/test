@@ -1,0 +1,22 @@
+uuid: 125a01ae-48cd-4e05-ab33-2d347bbe14e0
+langcode: en
+status: true
+dependencies:
+  module:
+    - jwt
+    - jwt_path_auth
+    - plusapi
+    - serialization
+    - users_jwt
+id: roles_get_user_info
+plugin_id: roles_get_user_info
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - jwt_auth
+    - users_jwt_auth
+    - jwt_path_auth

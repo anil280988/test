@@ -1,0 +1,17 @@
+uuid: 45ac777f-ed66-42ae-bdc1-d64f08b4dce4
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Custom Permissions'
+type: custom_permissions
+description: 'Custom Permissions for roles'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

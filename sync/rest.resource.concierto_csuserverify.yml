@@ -1,0 +1,18 @@
+uuid: b6ab945a-d68d-4563-b11e-97a6395ccea3
+langcode: en
+status: true
+dependencies:
+  module:
+    - basic_auth
+    - contentservice
+    - serialization
+id: concierto_csuserverify
+plugin_id: concierto_csuserverify
+granularity: resource
+configuration:
+  methods:
+    - POST
+  formats:
+    - json
+  authentication:
+    - basic_auth

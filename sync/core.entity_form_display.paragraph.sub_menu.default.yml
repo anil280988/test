@@ -1,0 +1,32 @@
+uuid: d83314a6-876d-48ae-ad8a-52bb06bd0e33
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sub_menu.field_submenu_title
+    - field.field.paragraph.sub_menu.field_subtitle_link
+    - paragraphs.paragraphs_type.sub_menu
+id: paragraph.sub_menu.default
+targetEntityType: paragraph
+bundle: sub_menu
+mode: default
+content:
+  field_submenu_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_subtitle_link:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

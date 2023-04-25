@@ -1,0 +1,10 @@
+uuid: 94d4c583-62eb-4007-8ce4-0509830bbaf7
+langcode: en
+status: true
+dependencies: {  }
+id: survey_questions_options
+label: 'Survey Questions Options'
+icon_uuid: null
+icon_default: null
+description: 'Options for questions in Survey.'
+behavior_plugins: {  }

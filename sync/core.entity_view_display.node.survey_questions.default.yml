@@ -1,0 +1,72 @@
+uuid: 02c40b44-9253-4aef-ac75-6d526faa4a85
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.survey_questions.field_domain_access
+    - field.field.node.survey_questions.field_domain_all_affiliates
+    - field.field.node.survey_questions.field_domain_source
+    - field.field.node.survey_questions.field_number_of_options
+    - field.field.node.survey_questions.field_options
+    - field.field.node.survey_questions.field_question
+    - field.field.node.survey_questions.field_question_type
+    - field.field.node.survey_questions.field_survey_type
+    - node.type.survey_questions
+  module:
+    - entity_reference_revisions
+    - options
+    - user
+id: node.survey_questions.default
+targetEntityType: node
+bundle: survey_questions
+mode: default
+content:
+  field_number_of_options:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_options:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_question:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_question_type:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_survey_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true

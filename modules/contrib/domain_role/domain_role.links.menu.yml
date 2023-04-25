@@ -1,0 +1,7 @@
+domain_role.domain_role_config_form:
+  title: 'Domain Roles'
+  route_name: domain_role.domain_role_config_form
+  description: 'Configure roles to apply per domain'
+  parent: entity.user.collection
+  weight: 99
+

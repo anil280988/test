@@ -1,0 +1,100 @@
+{%
+  set title_classes = [
+  required ? 'js-form-required',
+  required ? 'form-required',
+  'label'
+]
+%}
+{% if errors %}
+  <div>
+    {{ errors }}
+  </div>
+{% endif %}
+ {{ form.form_build_id }}
+  {{ form.form_token }}
+  {{ form.form_id }}
+<div class="col-md-12 col-sm-12 col-md-12"> <p><b>Thank you for your interest in Concierto.Cloud </b> - our integrated multi-cloud and infrastructure management platform that provides a comprehensive view of infrastructure and applications. As part of the onboarding process for the access and usage of the portal, we would appreciate your assistance in filling out the mandatory survey below.</p>
+<p> This survey also allows you to invite other participants and assign ownership for the different sections in this form. </p>
+<p>Thanks again for filling up this form. If you have have any questions or require more information, you can reach out to reach@trianz.com and we will get back to you with a response.</p></div>
+<div class="col-md-12 col-sm-12 col-md-12 section-box"> 
+<div class="col-md-12 col-sm-12 col-md-12 desc-label">   
+{{form.description3}} 
+<div class="hr-devide"><hr></div>
+</div>
+  <div class="col-md-6 col-sm-6 col-md-12">   {{form.org_name}} </div>
+<div class="col-md-6 col-sm-6 col-md-12">   {{form.org_short_name}} </div>
+<div class="col-md-12 col-sm-12 col-md-12">   {{form.address}} </div>  
+<div class="col-md-4 col-sm-4 col-md-12">   {{form.city}} </div>
+<div class="col-md-4 col-sm-4 col-md-12">   {{form.zipcode}} </div>
+<div class="col-md-4 col-sm-4 col-md-12">   {{form.country}} </div>
+<div class="col-md-4 col-sm-4 col-md-12">   {{form.contact_phone}} </div>
+<div class="col-md-4 col-sm-4 col-md-12">   {{form.contact_fax}} </div>
+<div class="col-md-4 col-sm-4 col-md-12">   {{form.contact_email}} </div>
+<div class="col-md-6 col-sm-6 col-md-12">   {{form.primary_contact}} </div>
+<div class="col-md-6 col-sm-6 col-md-12">   {{form.primary_phone}} </div>
+<div class="col-md-12 col-sm-12 col-md-12 nopad">
+<div class="col-md-6 col-sm-6 col-md-12">   {{form.secondary_email}} </div>
+<div class="col-md-6 col-sm-6 col-md-12">   {{form.secondary_contact}} </div>
+</div>
+<div class="col-md-6 col-sm-6 col-md-12">   {{form.domains}} </div>
+
+</div>
+<div class="col-md-12 col-sm-12 col-md-12 section-box">
+<div class="col-md-12 col-sm-12 col-md-12 mt-1 cloud-solutions-box">   {{form.cloud_solution}} </div>
+</div>
+
+<div class="col-md-12 col-sm-12 col-md-12 section-box">
+<div class="col-md-12 col-sm-12 col-md-12 desc-label">   {{form.description1}}
+<div class="hr-devide"><hr></div>
+ </div>
+<div class="col-md-12 col-sm-12 col-md-12">
+<div class="col-md-12 col-sm-12 col-md-12 section-subbox">
+<div class="col-md-12 col-sm-12 col-md-12">   {{form.section1.label}} </div>
+<div class="col-md-12 col-sm-12 col-md-12">   {{form.section1.mefill}} </div>
+<div class="col-md-12 col-sm-12 col-md-12 assign-to-label">   {{form.label}} </div>
+<div class="col-md-4 col-sm-4 col-md-12">   {{form.section1.first_name}} </div>
+<div class="col-md-4 col-sm-4 col-md-12">   {{form.section1.last_name}} </div>
+<div class="col-md-4 col-sm-4 col-md-12">   {{form.section1.email}} </div>
+</div>
+<div class="col-md-12 col-sm-12 col-md-12 section-subbox">
+<div class="col-md-12 col-sm-12 col-md-12">   {{form.section2.label}} </div>
+<div class="col-md-12 col-sm-12 col-md-12">   {{form.section2.mefill}} </div>
+<div class="col-md-12 col-sm-12 col-md-12 assign-to-label">   {{form.label}} </div>
+<div class="col-md-4 col-sm-4 col-md-12">   {{form.section2.first_name}} </div>
+<div class="col-md-4 col-sm-4 col-md-12">   {{form.section2.last_name}} </div>
+<div class="col-md-4 col-sm-4 col-md-12">   {{form.section2.email}} </div>
+</div>
+<div class="col-md-12 col-sm-12 col-md-12 section-subbox">
+<div class="col-md-12 col-sm-12 col-md-12">   {{form.section3.label}} </div>
+<div class="col-md-12 col-sm-12 col-md-12">   {{form.section3.mefill}} </div>
+<div class="col-md-12 col-sm-12 col-md-12 assign-to-label">   {{form.label}} </div>
+<div class="col-md-4 col-sm-4 col-md-12">   {{form.section3.first_name}} </div>
+<div class="col-md-4 col-sm-4 col-md-12">   {{form.section3.last_name}} </div>
+<div class="col-md-4 col-sm-4 col-md-12">   {{form.section3.email}} </div>
+</div>
+<div class="col-md-12 col-sm-12 col-md-12 section-subbox">
+<div class="col-md-12 col-sm-12 col-md-12">   {{form.section4.label}} </div>
+<div class="col-md-12 col-sm-12 col-md-12">   {{form.section4.mefill}} </div>
+<div class="col-md-12 col-sm-12 col-md-12 assign-to-label">   {{form.label}} </div>
+<div class="col-md-4 col-sm-4 col-md-12">   {{form.section4.first_name}} </div>
+<div class="col-md-4 col-sm-4 col-md-12">  {{form.section4.last_name}} </div>
+<div class="col-md-4 col-sm-4 col-md-12">   {{form.section4.email}} </div>
+</div>
+<div class="col-md-12 col-sm-12 col-md-12 section-subbox">
+<div class="col-md-12 col-sm-12 col-md-12">   {{form.section5.label}} </div>
+<div class="col-md-12 col-sm-12 col-md-12">   {{form.section5.mefill}} </div>
+<div class="col-md-12 col-sm-12 col-md-12 assign-to-label">   {{form.label}} </div>
+<div class="col-md-4 col-sm-4 col-md-12">   {{form.section5.first_name}} </div>
+<div class="col-md-4 col-sm-4 col-md-12">   {{form.section5.last_name}} </div>
+<div class="col-md-4 col-sm-4 col-md-12">   {{form.section5.email}} </div>
+</div>
+<div class="col-md-12 col-sm-12 col-md-12">   {{form.description2}} </div>
+</div>
+</div>
+
+
+<div class="col-md-12 col-sm-12 col-md-12">   {{form.actions}} </div>
+   
+               {{ form['render element'].actions.submit }}   
+                 
+

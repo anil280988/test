@@ -1,0 +1,18 @@
+uuid: 7baec770-c610-4793-9856-cdcb24209dcd
+langcode: en
+status: true
+dependencies:
+  module:
+    - jwt
+    - news
+    - serialization
+id: read_user_broadcast_rest_resource_post
+plugin_id: read_user_broadcast_rest_resource_post
+granularity: resource
+configuration:
+  methods:
+    - POST
+  formats:
+    - json
+  authentication:
+    - jwt_auth

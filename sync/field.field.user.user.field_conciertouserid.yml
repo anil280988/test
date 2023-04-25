@@ -1,0 +1,20 @@
+uuid: 4aa6ba38-3456-4f48-a9d8-389c0c997da6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_conciertouserid
+  module:
+    - user
+id: user.user.field_conciertouserid
+field_name: field_conciertouserid
+entity_type: user
+bundle: user
+label: conciertouserid
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

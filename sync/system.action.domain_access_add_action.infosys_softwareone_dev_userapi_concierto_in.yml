@@ -1,0 +1,14 @@
+uuid: 0966f90f-8d79-41df-ad8b-f23df4fd708c
+langcode: en
+status: true
+dependencies:
+  config:
+    - domain.record.infosys_softwareone_dev_userapi_concierto_in
+  module:
+    - domain_access
+id: domain_access_add_action.infosys_softwareone_dev_userapi_concierto_in
+label: 'Add selected content to the Infosys domain'
+type: node
+plugin: domain_access_add_action
+configuration:
+  domain_id: infosys_softwareone_dev_userapi_concierto_in

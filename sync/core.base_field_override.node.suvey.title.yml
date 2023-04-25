@@ -1,0 +1,18 @@
+uuid: f9fd3468-3d9c-4b92-a786-6f5d42ddb62c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.suvey
+id: node.suvey.title
+field_name: title
+entity_type: node
+bundle: suvey
+label: 'Survey Name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

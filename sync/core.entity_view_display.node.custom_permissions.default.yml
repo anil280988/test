@@ -1,0 +1,80 @@
+uuid: eb2c2e1c-7c12-482a-949f-fcceafc63a2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.custom_permissions.field_create
+    - field.field.node.custom_permissions.field_delete
+    - field.field.node.custom_permissions.field_module_name
+    - field.field.node.custom_permissions.field_permission_set
+    - field.field.node.custom_permissions.field_update
+    - field.field.node.custom_permissions.field_view
+    - node.type.custom_permissions
+  module:
+    - options
+    - user
+id: node.custom_permissions.default
+targetEntityType: node
+bundle: custom_permissions
+mode: default
+content:
+  field_create:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_delete:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_module_name:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_permission_set:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_update:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_view:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

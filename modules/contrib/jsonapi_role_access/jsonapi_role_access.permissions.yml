@@ -1,0 +1,3 @@
+jsonapi role access:
+  title: 'Access JSON:API role access settings'
+  description: 'Provides access to JSON:API role access configuration page.'

@@ -1,0 +1,20 @@
+uuid: 0be48dad-b6cf-43f9-9496-e6f69a7c1e06
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_survey_type
+field_name: field_survey_type
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

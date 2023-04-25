@@ -1,0 +1,23 @@
+uuid: 8a853f47-001d-4d2f-9993-301b8e0a0a90
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_delete
+    - node.type.custom_permissions
+id: node.custom_permissions.field_delete
+field_name: field_delete
+entity_type: node
+bundle: custom_permissions
+label: Delete
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

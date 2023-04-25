@@ -1,0 +1,21 @@
+services:
+  session_inspector:
+    class: Drupal\session_inspector\SessionInspector
+    arguments: ['@database', '@module_handler', '@session_manager']
+
+  session_inspector.access_checker:
+    class: Drupal\session_inspector\Access\SessionInspectorAccessCheck
+    tags:
+      - { name: access_check, applies_to: _session_inspector_access_check }
+
+  plugin.manager.session_inspector.browser_format:
+    class: Drupal\session_inspector\Plugin\BrowserFormatManager
+    parent: default_plugin_manager
+
+  plugin.manager.session_inspector.hostname_format:
+    class: Drupal\session_inspector\Plugin\HostnameFormatManager
+    parent: default_plugin_manager
+
+  session_inspector.session_deletion:
+    class: Drupal\session_inspector\SessionDeletion
+    arguments: ['@session_inspector', '@database', '@event_dispatcher']

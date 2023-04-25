@@ -1,0 +1,11 @@
+uuid: a866ab4a-dbaf-4fed-b952-0bf61ddca399
+langcode: en
+status: true
+dependencies: {  }
+id: whirlpool_apidevuser_concierto_cloud
+domain_id: 5234663
+hostname: softwareone-dev-userapi.concierto.in
+name: SoftwareOne
+scheme: http
+weight: 1
+is_default: true

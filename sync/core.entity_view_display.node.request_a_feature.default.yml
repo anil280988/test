@@ -1,0 +1,47 @@
+uuid: ad74474c-60be-4d4a-8b5b-cc8b05ffc23b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.request_a_feature.field_domain_access
+    - field.field.node.request_a_feature.field_domain_all_affiliates
+    - field.field.node.request_a_feature.field_domain_source
+    - field.field.node.request_a_feature.field_feature_description_
+    - field.field.node.request_a_feature.field_feature_file
+    - node.type.request_a_feature
+  module:
+    - user
+id: node.request_a_feature.default
+targetEntityType: node
+bundle: request_a_feature
+mode: default
+content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+  field_feature_description_:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_feature_file:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true

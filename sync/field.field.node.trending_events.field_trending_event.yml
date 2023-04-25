@@ -1,0 +1,23 @@
+uuid: 88f9232f-bb8b-4e38-83c9-9123d25393c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_trending_event
+    - node.type.trending_events
+id: node.trending_events.field_trending_event
+field_name: field_trending_event
+entity_type: node
+bundle: trending_events
+label: 'Trending Event'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

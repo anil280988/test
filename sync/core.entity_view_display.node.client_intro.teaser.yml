@@ -1,0 +1,30 @@
+uuid: 5145399c-1440-4e27-9263-82d0ab35796b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.client_intro.field_client_site
+    - field.field.node.client_intro.field_domain_access
+    - field.field.node.client_intro.field_domain_all_affiliates
+    - field.field.node.client_intro.field_domain_source
+    - field.field.node.client_intro.field_video_link
+    - node.type.client_intro
+  module:
+    - user
+id: node.client_intro.teaser
+targetEntityType: node
+bundle: client_intro
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_client_site: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true
+  field_video_link: true

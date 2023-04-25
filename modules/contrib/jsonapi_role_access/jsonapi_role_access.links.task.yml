@@ -1,0 +1,5 @@
+# Define a "JSON:API Extras tab" to contain all of its subtabs.
+jsonapi_role_access.settings:
+  route_name: jsonapi_role_access.config
+  base_route: jsonapi.settings
+  title: 'JSON:API Role Access'

@@ -1,0 +1,21 @@
+uuid: b4ce8c03-4558-4992-b36d-923cf867a483
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tutorial_mode
+    - node.type.tutorials
+  module:
+    - options
+id: node.tutorials.field_tutorial_mode
+field_name: field_tutorial_mode
+entity_type: node
+bundle: tutorials
+label: 'Tutorial Mode'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

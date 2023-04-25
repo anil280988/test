@@ -1,0 +1,18 @@
+uuid: e7723725-fef8-43b7-8b73-568cd41d5792
+langcode: en
+status: true
+dependencies:
+  module:
+    - jwt
+    - news
+    - serialization
+id: site_search_rest_resource_post
+plugin_id: site_search_rest_resource_post
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - jwt_auth

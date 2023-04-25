@@ -1,0 +1,23 @@
+uuid: 9ef28cea-7392-454f-a0c4-3c1a13878e6e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.event_calendar
+  module:
+    - text
+id: node.event_calendar.body
+field_name: body
+entity_type: node
+bundle: event_calendar
+label: Synopsys
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

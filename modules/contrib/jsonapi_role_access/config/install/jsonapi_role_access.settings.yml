@@ -1,0 +1,4 @@
+negate: '1'
+roles:
+  authenticated: authenticated
+  anonymous: 0

@@ -1,0 +1,14 @@
+uuid: 81382e54-d4a8-4ca4-91df-11b635633af3
+langcode: en
+status: true
+dependencies:
+  config:
+    - domain.record.sone_qa
+  module:
+    - domain_access
+id: domain_access_add_action.sone_qa
+label: 'Add selected content to the SoneQA domain'
+type: node
+plugin: domain_access_add_action
+configuration:
+  domain_id: sone_qa

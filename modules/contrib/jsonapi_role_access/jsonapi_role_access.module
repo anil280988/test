@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * @file
+ * This is module file.
+ */
+
+use Drupal\Core\Url;
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function jsonapi_role_access_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.jsonapi_role_access':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('This module allows you to manage access of JSON:API resources based on user role. It provide a simple <a href=":form">setting form</a> from where you can restrict or allow a user role to access JSON:API resource.', [':form' => Url::fromRoute('jsonapi_role_access.config')->toString()]);
+      return $output;
+
+    case 'jsonapi_role_access.config':
+      $output = '<p>' . t('This is the setting form where you can either allow or restrict any role to access JSON:API resources.') . '</p>';
+      return $output;
+  }
+}

@@ -1,0 +1,14 @@
+uuid: 988f2007-f440-486e-b605-46e5b40afc17
+langcode: en
+status: true
+dependencies:
+  config:
+    - domain.record.trianzit_uat_userapi_concierto_cloud
+  module:
+    - domain_access
+id: domain_access_add_editor_action.trianzit_uat_userapi_concierto_cloud
+label: 'Add editors to the Trianz IT domain'
+type: user
+plugin: domain_access_add_editor_action
+configuration:
+  domain_id: trianzit_uat_userapi_concierto_cloud

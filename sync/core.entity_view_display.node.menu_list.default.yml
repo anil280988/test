@@ -1,0 +1,45 @@
+uuid: b712c22f-873b-4e19-876a-b9c77ba505a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.menu_list.field_domain_access
+    - field.field.node.menu_list.field_domain_all_affiliates
+    - field.field.node.menu_list.field_domain_source
+    - field.field.node.menu_list.field_feature_permission
+    - field.field.node.menu_list.field_menu
+    - node.type.menu_list
+  module:
+    - entity_reference_revisions
+    - options
+    - user
+id: node.menu_list.default
+targetEntityType: node
+bundle: menu_list
+mode: default
+content:
+  field_feature_permission:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_menu:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true

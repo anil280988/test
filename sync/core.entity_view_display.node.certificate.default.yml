@@ -1,0 +1,34 @@
+uuid: 652c500a-6f37-4213-9cbd-66fcf15e3717
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.certificate.body
+    - field.field.node.certificate.field_domain_access
+    - field.field.node.certificate.field_domain_all_affiliates
+    - field.field.node.certificate.field_domain_source
+    - node.type.certificate
+  module:
+    - text
+    - user
+id: node.certificate.default
+targetEntityType: node
+bundle: certificate
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true

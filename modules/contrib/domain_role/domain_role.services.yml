@@ -1,0 +1,6 @@
+services:
+  domain_role.authentication.domain_cookie:
+    class: Drupal\domain_role\Authentication\Provider\DomainCookie
+    arguments: ['@session_configuration', '@database', '@domain.negotiator']
+    tags:
+      - { name: authentication_provider, provider_id: 'domain_cookie', priority: 100, global: TRUE }

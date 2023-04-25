@@ -1,0 +1,59 @@
+uuid: 8839db78-c1db-4269-9939-a5e9485eb0d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.suvey.field_domain_access
+    - field.field.node.suvey.field_domain_all_affiliates
+    - field.field.node.suvey.field_domain_source
+    - field.field.node.suvey.field_questions_list
+    - field.field.node.suvey.field_survey
+    - field.field.node.suvey.field_survey_problem
+    - field.field.node.suvey.field_survey_text
+    - node.type.suvey
+  module:
+    - user
+id: node.suvey.default
+targetEntityType: node
+bundle: suvey
+mode: default
+content:
+  field_questions_list:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_survey:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_survey_problem:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_survey_text:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_domain_source: true

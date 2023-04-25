@@ -1,0 +1,21 @@
+uuid: 16ba4ce4-5a08-4d0c-85dd-5f547de9e151
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_permission_set
+    - node.type.custom_permissions
+id: node.custom_permissions.field_permission_set
+field_name: field_permission_set
+entity_type: node
+bundle: custom_permissions
+label: 'Permission Set'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: "{\r\n    \"create\": false,\r\n    \"read\": false,\r\n    \"update\": false,\r\n    \"delete\": false\r\n}"
+default_value_callback: ''
+settings: {  }
+field_type: string_long

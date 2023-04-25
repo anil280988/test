@@ -1,0 +1,5 @@
+xss_prevention.settings_form:
+  title: 'XSS Prevention'
+  route_name: xss_prevention.xss_prevention_config_form
+  parent: system.admin_config_system
+  description: 'XSS Prevention settings.'

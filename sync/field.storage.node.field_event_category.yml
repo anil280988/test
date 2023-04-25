@@ -1,0 +1,27 @@
+uuid: 70940a6d-21be-428d-ab9f-73d69c2ae9fd
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_event_category
+field_name: field_event_category
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: IT
+      label: IT
+    -
+      value: Training
+      label: Training
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,17 @@
+uuid: 083011bc-9230-4fe7-8c6d-2685d853ab81
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Client intro'
+type: client_intro
+description: 'Client intro'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

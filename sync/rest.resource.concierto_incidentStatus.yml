@@ -1,0 +1,18 @@
+uuid: e609a199-7fb6-4f35-bb78-2e08550ba1e0
+langcode: en
+status: true
+dependencies:
+  module:
+    - jwt
+    - serialization
+    - survey
+id: concierto_incidentStatus
+plugin_id: concierto_incidentStatus
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - jwt_auth

@@ -1,0 +1,4 @@
+browser_format: 'basic'
+hostname_format: 'basic'
+date_format: 'medium'
+date_interval_include: true

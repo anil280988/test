@@ -1,0 +1,18 @@
+uuid: 3d400fb8-fe0b-4576-b4e7-448010e9f948
+langcode: en
+status: true
+dependencies:
+  module:
+    - contentservice
+    - jwt
+    - serialization
+id: concierto_content_service_create
+plugin_id: concierto_content_service_create
+granularity: resource
+configuration:
+  methods:
+    - PUT
+  formats:
+    - json
+  authentication:
+    - jwt_auth

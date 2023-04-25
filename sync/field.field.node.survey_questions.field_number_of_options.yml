@@ -1,0 +1,23 @@
+uuid: dd117213-13d6-4fe2-b321-f99771ce032c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_number_of_options
+    - node.type.survey_questions
+id: node.survey_questions.field_number_of_options
+field_name: field_number_of_options
+entity_type: node
+bundle: survey_questions
+label: 'Number of options'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

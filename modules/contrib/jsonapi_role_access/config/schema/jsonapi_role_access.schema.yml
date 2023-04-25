@@ -1,0 +1,10 @@
+jsonapi_role_access.settings:
+  type: config_object
+  label: 'JSON:API Role Access settings'
+  mapping:
+    negate:
+      type: radios
+      label: 'Which user type should be allowed?'
+    roles:
+      type: checkboxes
+      label: 'User roles'

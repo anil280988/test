@@ -1,0 +1,6 @@
+services:
+  news.user_accessroute:
+    class: Drupal\plusapi\GetUserInfo
+    tags:
+      - { name: user_accessroute }
+

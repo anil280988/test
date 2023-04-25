@@ -1,0 +1,21 @@
+uuid: eb0cbee3-9d70-48a4-85ac-053c0c7f55af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_trending_news
+    - node.type.news
+  module:
+    - options
+id: node.news.field_trending_news
+field_name: field_trending_news
+entity_type: node
+bundle: news
+label: 'Trending News'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

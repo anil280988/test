@@ -1,0 +1,7 @@
+domain_role_access.admin:
+  path: '/admin/config/domain/roles/{domain}/edit'
+  defaults:
+    _controller: '\Drupal\domain_role_access\Controller\DomainRolesController::edit'
+    _title: 'Edit domain roles access'
+  requirements:
+    _permission: 'administer domains'

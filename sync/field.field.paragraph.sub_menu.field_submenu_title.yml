@@ -1,0 +1,19 @@
+uuid: 7e450c6c-6707-412f-acbc-15075b671b5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_submenu_title
+    - paragraphs.paragraphs_type.sub_menu
+id: paragraph.sub_menu.field_submenu_title
+field_name: field_submenu_title
+entity_type: paragraph
+bundle: sub_menu
+label: 'Submenu Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

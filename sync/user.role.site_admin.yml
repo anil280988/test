@@ -1,0 +1,96 @@
+uuid: 521d5c65-21bd-4657-b41e-95e5b13f1661
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.article
+    - node.type.broadcast
+    - node.type.client_intro
+    - node.type.contact
+    - node.type.custom_permissions
+    - node.type.event_calendar
+    - node.type.incidents
+    - node.type.news
+    - node.type.page
+    - node.type.tutorials
+    - workflows.workflow.editorial
+  module:
+    - content_moderation
+    - content_moderation_notifications
+    - domain_access
+    - node
+id: site_admin
+label: 'Site Admin'
+weight: -3
+is_admin: null
+permissions:
+  - 'administer content moderation notifications'
+  - 'create article content'
+  - 'create broadcast content'
+  - 'create broadcast content on assigned domains'
+  - 'create client_intro content'
+  - 'create contact content'
+  - 'create contact content on assigned domains'
+  - 'create event_calendar content'
+  - 'create incidents content'
+  - 'create news content'
+  - 'create page content'
+  - 'create tutorials content'
+  - 'delete any article content'
+  - 'delete any broadcast content'
+  - 'delete any client_intro content'
+  - 'delete any contact content'
+  - 'delete any custom_permissions content'
+  - 'delete any event_calendar content'
+  - 'delete any incidents content'
+  - 'delete any news content'
+  - 'delete any page content'
+  - 'delete any tutorials content'
+  - 'delete article revisions'
+  - 'delete broadcast content on assigned domains'
+  - 'delete broadcast revisions'
+  - 'delete client_intro revisions'
+  - 'delete contact revisions'
+  - 'delete custom_permissions revisions'
+  - 'delete event_calendar revisions'
+  - 'delete incidents revisions'
+  - 'delete news revisions'
+  - 'delete own article content'
+  - 'delete own broadcast content'
+  - 'delete own client_intro content'
+  - 'delete own contact content'
+  - 'delete own custom_permissions content'
+  - 'delete own event_calendar content'
+  - 'delete own incidents content'
+  - 'delete own news content'
+  - 'delete own page content'
+  - 'delete own tutorials content'
+  - 'delete page revisions'
+  - 'delete tutorials revisions'
+  - 'edit any article content'
+  - 'edit any broadcast content'
+  - 'edit any client_intro content'
+  - 'edit any contact content'
+  - 'edit any custom_permissions content'
+  - 'edit any event_calendar content'
+  - 'edit any incidents content'
+  - 'edit any news content'
+  - 'edit any page content'
+  - 'edit any tutorials content'
+  - 'edit own article content'
+  - 'edit own broadcast content'
+  - 'edit own client_intro content'
+  - 'edit own contact content'
+  - 'edit own custom_permissions content'
+  - 'edit own event_calendar content'
+  - 'edit own incidents content'
+  - 'edit own news content'
+  - 'edit own page content'
+  - 'edit own tutorials content'
+  - 'update broadcast content on assigned domains'
+  - 'use editorial transition content_review'
+  - 'use editorial transition create_new_draft'
+  - 'use editorial transition draft_reject'
+  - 'use editorial transition publish'
+  - 'use editorial transition published'
+  - 'view any unpublished content'

@@ -1,0 +1,23 @@
+uuid: b32e9820-735b-49c6-831a-d2d7815aa0b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_view
+    - node.type.custom_permissions
+id: node.custom_permissions.field_view
+field_name: field_view
+entity_type: node
+bundle: custom_permissions
+label: read
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

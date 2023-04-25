@@ -1,0 +1,19 @@
+uuid: 6d703323-3966-4e20-ab53-bd4ef5243684
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_answer_options
+    - paragraphs.paragraphs_type.survey_questions_options
+id: paragraph.survey_questions_options.field_answer_options
+field_name: field_answer_options
+entity_type: paragraph
+bundle: survey_questions_options
+label: 'Answer Options'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,17 @@
+uuid: 6ba8e638-c2f0-49fa-8053-a66570828334
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: EventCalendar
+type: event_calendar
+description: 'Event Calendar'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

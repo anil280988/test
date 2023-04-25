@@ -1,0 +1,19 @@
+uuid: 71bf77c1-f885-4c9c-a9aa-ef0da3ff9c0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ticket_identifier
+    - node.type.incidents
+id: node.incidents.field_ticket_identifier
+field_name: field_ticket_identifier
+entity_type: node
+bundle: incidents
+label: 'Ticket Identifier'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

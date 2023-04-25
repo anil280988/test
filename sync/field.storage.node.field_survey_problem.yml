@@ -1,0 +1,19 @@
+uuid: d79eb3e1-92e4-4b32-aa01-e64066e45d7d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_survey_problem
+field_name: field_survey_problem
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,11 @@
+uuid: 07e71974-f97a-43b8-b9b3-d0e9c40c791e
+langcode: en
+status: true
+dependencies: {  }
+id: infosys_softwareone_dev_userapi_concierto_in
+domain_id: 15858588
+hostname: infosys.softwareone-dev-userapi.concierto.in
+name: Infosys
+scheme: http
+weight: 2
+is_default: false
