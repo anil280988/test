@@ -74,7 +74,7 @@ class csCreateNews extends ResourceBase {
    */
   public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) {
     return new static(
-      $configuration, $plugin_id, $plugin_definition, , $container->get('logger.factory')
+      $configuration, $plugin_id, $plugin_definition, $container->get('logger.factory')
       ->get('plusapi'), $container->get('current_user')
     );
   }

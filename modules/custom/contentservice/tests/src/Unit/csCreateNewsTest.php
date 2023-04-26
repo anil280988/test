@@ -126,7 +126,7 @@ class csCreateNewsTest extends Drupal\Tests\UnitTestCase {
       ->getMock();
 
     $service_mock->method('UserPermissionCheck')
-      ->with('Broadcast', 'create')
+      ->with('News', 'create')
       ->willReturn('Allow');
 
     $service_mock->method('getDomainIdFromClientId')
@@ -189,7 +189,7 @@ class csCreateNewsTest extends Drupal\Tests\UnitTestCase {
       ->getMock();
 
     $service_mock->method('UserPermissionCheck')
-      ->with('Broadcast', 'create')
+      ->with('News', 'create')
       ->willReturn('Allow');
 
     $service_mock->method('getDomainIdFromClientId')
@@ -251,7 +251,7 @@ class csCreateNewsTest extends Drupal\Tests\UnitTestCase {
       ->getMock();
 
     $service_mock->method('UserPermissionCheck')
-      ->with('Broadcast', 'create')
+      ->with('News', 'create')
       ->willReturn('Allow');
 
     $service_mock->method('getDomainIdFromClientId')
@@ -313,7 +313,7 @@ class csCreateNewsTest extends Drupal\Tests\UnitTestCase {
       ->getMock();
 
     $service_mock->method('UserPermissionCheck')
-      ->with('Broadcast', 'create')
+      ->with('News', 'create')
       ->willReturn('Deny');
 
     $service_mock->method('getDomainIdFromClientId')
@@ -379,7 +379,7 @@ class csCreateNewsTest extends Drupal\Tests\UnitTestCase {
       ->getMock();
 
     $service_mock->method('UserPermissionCheck')
-      ->with('Broadcast', 'create')
+      ->with('News', 'create')
       ->willReturn('Allow');
 
     $service_mock->method('getDomainIdFromClientId')
@@ -430,7 +430,7 @@ class csCreateNewsTest extends Drupal\Tests\UnitTestCase {
       ->getMock();
     $node_storage->method('create')
       ->with([
-        'type' => 'broadcast',
+        'type' => 'News',
         'title' => $data['title'],
         'status' => TRUE,
       ])
