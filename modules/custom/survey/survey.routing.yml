@@ -1,7 +1,0 @@
-survey.settings_form:
-  path: '/survey/view'
-  defaults:
-    _controller: '\Drupal\survey\Controller\SurveyViewController::view'
-    _title: 'Survey Results'
-  options:
-    no_cache: 'TRUE'

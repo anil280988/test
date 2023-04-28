@@ -1,5 +1,0 @@
-name: xai
-type: module
-description: My Config Module
-core_version_requirement: ^8.7.7 || ^9
-package: Custom

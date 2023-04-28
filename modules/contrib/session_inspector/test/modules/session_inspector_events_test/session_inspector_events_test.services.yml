@@ -1,6 +1,0 @@
-services:
-  session_inspector_events_test.session_inspector_event_subscriber:
-    class: \Drupal\session_inspector_events_test\EventSubscriber\SessionInspectorEventsTest
-    arguments: ['@state']
-    tags:
-      - { name: event_subscriber }

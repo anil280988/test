@@ -1,6 +1,0 @@
-services:
-  domain_role_access.access_manager:
-    class: Drupal\domain_role_access\DomainRoleAccessManager
-    arguments: ['@domain_role_access.access_manager.inner', '@domain.negotiator', '@module_handler', '@entity_type.manager']
-    decorates: domain_access.manager
-    decoration_priority: 1

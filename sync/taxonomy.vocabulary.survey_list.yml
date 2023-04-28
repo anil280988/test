@@ -1,8 +1,0 @@
-uuid: 0365f439-cdf7-4f56-be8a-63186e5e6d20
-langcode: en
-status: true
-dependencies: {  }
-name: 'Survey List'
-vid: survey_list
-description: 'Different type of Surveys'
-weight: 0

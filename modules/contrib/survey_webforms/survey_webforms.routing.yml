@@ -1,7 +1,0 @@
-survey_webforms.resigter_link:
-  path: '/createuser'
-  defaults:
-    _form: '\Drupal\survey_webforms\Form\CreateUserForm'
-    _title: 'Create User Form'
-  requirements:
-    _access: 'TRUE'

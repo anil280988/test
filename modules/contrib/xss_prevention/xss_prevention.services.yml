@@ -1,6 +1,0 @@
-services:
-  xss_prevention.event_subscriber:
-    class: Drupal\xss_prevention\EventSubscriber\XssPreventionEventSubscriber
-    arguments: ['@logger.factory', '@config.factory']
-    tags:
-      - { name: event_subscriber }

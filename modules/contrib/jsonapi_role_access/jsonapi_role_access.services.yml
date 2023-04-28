@@ -1,6 +1,0 @@
-services:
-  jsonapi_role_access.event_subscriber:
-    class: Drupal\jsonapi_role_access\EventSubscriber\CheckUserRolePermissionEvent
-    arguments: ['@config.factory','@current_user']
-    tags:
-      - { name: event_subscriber }

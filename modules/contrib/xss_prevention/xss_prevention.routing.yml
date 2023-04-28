@@ -1,9 +1,0 @@
-xss_prevention.xss_prevention_config_form:
-  path: '/admin/config/system/xss_prevention'
-  defaults:
-    _form: '\Drupal\xss_prevention\Form\XssPreventionConfigForm'
-    _title: 'Xss Prevention Settings'
-  requirements:
-    _permission: 'manage xss prevention'
-  options:
-    _admin_route: TRUE
