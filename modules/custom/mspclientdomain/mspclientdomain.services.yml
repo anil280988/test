@@ -1,0 +1,9 @@
+services:
+
+  # Defines a simple service which requires no parameter for its constructor.
+  mspclientdomain.GenericService:
+    class: Drupal\mspclientdomain\Service\GenericService
+    arguments: ['@messenger', '@current_user']
+
+parameters:
+  mspclientdomain.parameter: TRUE

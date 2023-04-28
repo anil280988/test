@@ -1,0 +1,42 @@
+<?php
+
+class mspclientdomain_data {
+       function getip() {
+        if (getenv('HTTP_X_FORWARDED_FOR')) {
+            $ip = getenv('HTTP_X_FORWARDED_FOR');
+        } elseif (getenv('HTTP_X_REAL_IP')) {
+            $ip = getenv('HTTP_X_REAL_IP');
+        } else {
+            $ip = $_SERVER['REMOTE_ADDR'];
+        }
+
+        return $ip;
+    }
+}
+
+function stable_usort(&$array, $cmp){
+    $i = 0;
+    $array = array_map(function($elt)use(&$i)
+    {
+        return [$i++, $elt];
+    }, $array);
+    usort($array, function($a, $b)use($cmp)
+    {
+        return $cmp($a[1], $b[1]) ?: ($a[0] - $b[0]);
+    });
+    $array = array_column($array, 1);
+}
+
+function array_recursive_search_key_map($needle, $haystack) {
+    foreach($haystack as $first_level_key=>$value) {
+        if ($needle === $value) {
+            return array($first_level_key);
+        } elseif (is_array($value)) {
+            $callback = array_recursive_search_key_map($needle, $value);
+            if ($callback) {
+                return array_merge(array($first_level_key), $callback);
+            }
+        }
+    }
+    return false;
+}

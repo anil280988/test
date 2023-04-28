@@ -1,0 +1,6 @@
+name: News -- Rest Services
+type: module
+description: News -- Rest Services.
+core_version_requirement: ^8.7.7 || ^9
+
+package: News
