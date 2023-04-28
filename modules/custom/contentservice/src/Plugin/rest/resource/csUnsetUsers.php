@@ -77,7 +77,6 @@ class csUnsetUsers extends ResourceBase {
     }
 	
 	public function post($data) {
-	  \Drupal::logger('Unsetuser')->warning('<pre><code>' . print_r($data, TRUE) . '</code></pre>');
 	  $data = json_decode(\Drupal::request()->getContent(), true);
 	  $user = user_load_by_mail($data['mail']);
   
@@ -111,34 +110,5 @@ class csUnsetUsers extends ResourceBase {
 	  return $response;
 	}
 
-    /**
-     * Responds to PUT requests.
-     *
-     * Returns a list of bundles for specified entity.
-     *
-     * @param $node_type
-     * @param $data
-     * @return \Drupal\rest\ResourceResponse Throws exception expected.
-     * Throws exception expected.
-     */
-	/*public function put() {	
-
-	$data = json_decode(\Drupal::request()->getContent(), true);
-	$user = user_load_by_mail($data['mail']);
-  
-	if(is_object($user)){
-		$user->set('status',0);
-		$user->save();
-		$result = ['status' => 'success', 'message' => 'User is Delete Successfully',
-		'userID' => $user->id()
-		];
-	} else {
-	    $result = ['status' => 'failed', 'message' => 'Invalid User'];
-	}	
-	$response = new ResourceResponse($result);
-	$response->addCacheableDependency($result);
-	return $response;
-	
-    }*/
 }
 
