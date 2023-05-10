@@ -124,11 +124,7 @@ class csUpdateNews extends ResourceBase {
 		}
 		  $node = Node::load($id);
 
-		  $domain_access = $node->get('field_domain_access')->target_id;
-		 /* if($domain_access != $domain_id) {
-		    $message="Domain Access Deny";
-		    throw new AccessDeniedHttpException($message);
-		  }*/
+		  $domain_access = $node->get('field_domain_access')->getValue()[0]['target_id'];
 		  $node->set('title', $data['title']);
 		  $node->set('field_news_description', $data['description']);
 		  $node->set('field_news_categories', $data['category']);
